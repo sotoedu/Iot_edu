@@ -1,0 +1,14 @@
+$ cd $HOME
+$ cd pcap
+$ sudo apt-get install libpcap-dev
+$ gcc -o interface interface.c   -lpcap
+$ ./interface
+$ gcc -o info info.c -lpcap
+$ ./info
+
+$ gcc -o livepacket livepacket.c -lpcap
+$ sudo ./livepacket
+$ gcc -o pcap pcap.c -lpcap
+“warning 에러는 무시해도 됨“
+$ sudo ./pcap   -1 "port 80" 
+

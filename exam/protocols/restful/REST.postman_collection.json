@@ -1,0 +1,106 @@
+{
+	"variables": [],
+	"info": {
+		"name": "REST",
+		"_postman_id": "f0918a98-fc66-b5ca-31eb-e8c6e4d701c4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "제품등록",
+			"request": {
+				"url": "http://localhost:3000/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "제품리스트",
+			"request": {
+				"url": "http://localhost:3000/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별리스트",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별수정",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "nice",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "3000",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별삭제",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

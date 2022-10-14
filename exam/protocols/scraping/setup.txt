@@ -1,0 +1,4 @@
+http://www.fifa.com/fifa-world-ranking/index.html
+
+
+sudo npm install    request    cheerio      iconv-lite   

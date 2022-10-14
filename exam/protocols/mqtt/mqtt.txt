@@ -1,0 +1,51 @@
+
+
+$ sudo wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+$ sudo apt-key add mosquitto-repo.gpg.key 
+$ sudo rm mosquitto-repo.gpg.key
+$ cd /etc/apt/sources.list.d/
+$ sudo wget http://repo.mosquitto.org/debian/mosquitto-stretch.list   
+$ sudo apt-get update
+$ sudo apt-get install mosquitto mosquitto-clients 
+
+$ sudo netstat -nap | grep mosquitto
+tcp        0      0 0.0.0.0:1883            0.0.0.0:*               LISTEN      6393/mosquitto
+tcp6       0      0 :::1883                 :::*                    LISTEN      6393/mosquitto
+
+cmd w1>
+$ sudo mosquitto_sub -d -t hello/world
+
+cmd w2>
+$ sudo mosquitto_pub -d -t hello/world -m "Hello Wold"
+
+$ sudo nano /etc/mosquitto/passwd 
+admin:root1234
+
+$ cat /etc/mosquitto/passwd
+admin:root1234
+
+$ sudo mosquitto_passwd -U /etc/mosquitto/passwd
+
+$ cat /etc/mosquitto/passwd
+admin:$6$RN6hnNAkGY874qdQ$2AOigdzpyXvHaVaFcjESBSeLtN3toTDpYukR16ylcqeDcFZtq/eRV8gHiVQedEwJAdbZ03bBVgxrVVj7QCCkug==
+
+$ sudo mosquitto_passwd -b /etc/mosquitto/passwd user root1234
+
+$ sudo mosquitto_sub -h 192.168.10.81 -p 1883 -t /test -u admin -P root1234
+
+$ sudo mosquitto_pub -h 192.168.10.81 -p 1883 -t /test -u admin -P root1234 -m "i'm your father"
+
+$ pip3 install paho-mqtt
+$ nano test.py
+ 
+import paho.mqtt.client as mqtt
+client = mqtt.Client()
+client.username_pw_set("admin", "root1234")
+client.connect("192.168.10.81", 1883, 60)
+client.publish("/door", "test")
+print ("Sending 1...")
+
+
+$ python3 test.py
+$ sudo mosquitto_sub -h 192.168.10.81 -p 1883 -t /door -u admin -P root1234
+ 
