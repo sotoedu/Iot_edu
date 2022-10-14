@@ -1,0 +1,6 @@
+$ sudo npm install  express
+$ sudo npm install  http
+$ sudo npm install socket.io
+$ node  index.js
+
+http://127.0.0.1:3000
