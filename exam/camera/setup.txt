@@ -1,0 +1,12 @@
+﻿$ sudo apt-get install python-picamera
+
+Console에서 command로 카메라를 제어
+카메라 테스트를 위해 preview 이미지를 가져옴
+$ raspistill -v –o
+
+Raspistill 을 이용해서 사진을 찍음
+$ raspistill -v -o xxx.jpg
+
+Raspivid 를 이용하면 녹화가 가능하며, 녹화 기본 설정이 1080p (1920×1080)​ 이고, 5초간 비디오를 녹화하기 (VLC player, Wonder Player)
+$ raspivid -t 5000 -o xxx.h264
+
