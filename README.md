@@ -11,4 +11,8 @@ https://github.com/P3TERX/GeoLite.mmdb
 
     192.168.0.106
     sudo tcpdump -i eth0 src 192.168.0.106 -w 106.pcap
+    
+    port 80
+    sudo tcpdump -i eth0 tcp port 80 -w 80.pcap
+
 
