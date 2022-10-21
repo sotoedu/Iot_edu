@@ -1,6 +1,8 @@
 # Iot_edu
 Iot_edu
 
+https://www.hancomacademy.com/survey/intro.php
+
 
 https://github.com/P3TERX/GeoLite.mmdb
 
