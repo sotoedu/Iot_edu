@@ -2,11 +2,10 @@
 Iot_edu
 
 Naver Cafe
+
 https://cafe.naver.com/jangk
 
-
 https://www.hancomacademy.com/survey/intro.php
-
 
 https://github.com/P3TERX/GeoLite.mmdb
 
