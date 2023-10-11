@@ -1,6 +1,10 @@
 # Iot_edu
 Iot_edu
 
+Naver Cafe
+https://cafe.naver.com/jangk
+
+
 https://www.hancomacademy.com/survey/intro.php
 
 
