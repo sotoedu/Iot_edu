@@ -31,6 +31,10 @@ https://jsonplaceholder.typicode.com/
 
 https://github.com/P3TERX/GeoLite.mmdb
 
+[SOAP]
+
+https://reqbin.com/req/yemanjjt/make-soap-request
+
 
     리눅스에서 tcp 패킷을 캡쳐해서, wireskark에서 업로딩 방법
 
