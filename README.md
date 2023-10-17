@@ -23,6 +23,8 @@ https://www.hancomacademy.com/survey/intro.php
 
 [REST API]
 
+https://reqres.in/api/users
+
 https://resttesttest.com/
 
 https://jsonplaceholder.typicode.com/
