@@ -27,6 +27,8 @@ https://resttesttest.com/
 
 https://jsonplaceholder.typicode.com/
 
+[GeoLite]
+
 https://github.com/P3TERX/GeoLite.mmdb
 
 
