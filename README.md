@@ -1,19 +1,31 @@
 # Iot_edu
 Iot_edu
 
+
+[Embedded System]
+
 Naver Cafe
 
 https://cafe.naver.com/jangk
 
 https://recipes.tistory.com/category/%EA%B0%95%EC%9D%98%EC%8B%A4%28Season3%29?page=2
 
+[datasheet]
+
 https://www.alldatasheet.co.kr/view_datasheet.jsp?Searchword=CPU-
+
+[Arduino Web]
 
 https://www.tinkercad.com/
 
 https://www.hancomacademy.com/survey/intro.php
 
+
+[REST API]
+
 https://resttesttest.com/
+
+https://jsonplaceholder.typicode.com/
 
 https://github.com/P3TERX/GeoLite.mmdb
 
